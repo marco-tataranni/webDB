@@ -18,8 +18,8 @@
             if(request.getParameter("logout")!=null && request.getParameter("logout").equals("true")){
               
               Cookie ck = new Cookie("user", "");
-              ck.setMaxAge(0);
-              response.addCookie(ck);
+              ck.setMaxAge(0); //il cookie muore subito e imposta la sua vita a 0
+               response.addCookie(ck);//salva le modifiche
               
               %>
                <meta http-equiv="refresh" content="0; url=/html/login.html">
@@ -82,7 +82,7 @@
                   output+="Il tuo username e' gia' stato usato!<br>";
               }
               if(existsEmail){
-                  output+="La tua mail e' gia' stato usato!<br>";
+                  output+="La tua mail e' gia' stato usata!<br>";
               }
               
               if(output.isEmpty()){

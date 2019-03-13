@@ -1,0 +1,76 @@
+<! DOCTYPE html>
+<html>
+	<head>
+		<style>
+			article{
+				width:200px;
+				height:200px;
+				
+			}
+			#a1:hover{
+				width:400px;
+				height:400px;
+				transition: width 0.5s;
+				transition: height 0.5s;
+				
+			}
+			#a2{
+				background-color:red;
+				
+
+			}
+			#a2:hover{
+				background-color:yellow;
+				
+			}
+			#a3:hover{
+				transform:translate(1000px, 0px);
+				transition: transform 6s;
+				transition-timing-function:ease-in-out;
+			}
+			#a4:hover{
+				background-color:#ff0066;
+				width:700px;
+				transition: width 6s;
+				transition-timing-function: linear;
+
+			}
+			#a5:hover{
+				transform: rotate(60deg);
+				transition: transform 8s;
+				transition-timing-function: linear;
+
+			}
+			#a6:hover{
+				background-color:blue;
+				transition: background-color 10s;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<article id="a1">
+			<h1>Il primo box</h1>
+		</article>
+		
+		<article id="a2">
+			<h1>Il secondo box</h1>
+		</article>
+		
+		<article id="a3">
+			<h1>Il terzo box</h1>
+		</article>
+		<article id="a4">
+			<h1>Il quarto box</h1>
+		</article>
+		
+		<article id="a5">
+			<h1>Il quinto  box</h1>
+		</article>
+		
+		<article id="a6">
+			<h1>Il sesto box</h1>
+		</article>
+	</body>
+	
+</html>

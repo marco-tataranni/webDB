@@ -1,0 +1,201 @@
+<! DOCTYPE html>
+<html>
+	<head>
+		<style>
+			article{
+				width:200px;
+				height:200px;
+				
+			}
+			#a1:hover{
+				background-color:blue;
+				animation-name:animation1;
+				animation-duration: 10s;
+			}
+			@keyframes animation1{
+				0% {background-color: red;}
+				25% {background-color: yellow;}
+				50% {background-color: green;}
+				100% {background-color: blue;}
+			}
+			#a2:hover{
+				position:relative;
+				
+				animation-name:animation2;
+				animation-duration: 10s;
+				 animation-iteration-count: 2;
+			}
+			@keyframes animation2{
+				 0%   { left:0px; top:0px;}
+				25%  { left:200px; top:0px;}
+				50%  {left:200px; top:200px;}
+				75%  {left:0px; top:200px;}
+				100% { left:0px; top:0px;}
+			}
+			#a3:hover{
+				position:relative;
+				
+				animation-name:animation3;
+				animation-duration: 5s;
+				animation-delay: 5s;
+
+			}
+			@keyframes animation3{
+				 0%   { left:0px; top:0px;}
+				25%  { left:200px; top:0px;}
+				50%  {left:200px; top:200px;}
+				75%  {left:0px; top:200px;}
+				100% { left:0px; top:0px;}
+			}
+			#a4:hover{
+				position:relative;
+				
+				animation-name:animation4;
+				animation-duration: 5s;
+				animation-delay: 5s;
+				animation-timing-function: ease-in-out;
+
+			}
+			@keyframes animation4{
+				 0%   { left:0px; top:0px;}
+				25%  { left:200px; top:0px;}
+				50%  {left:200px; top:200px;}
+				75%  {left:0px; top:200px;}
+				100% { left:0px; top:0px;}
+			}
+			#a5:hover{
+				position:relative;
+				background-color:#ff6666;
+				animation-name:animation5;
+				animation-duration: 10s;
+				 animation-iteration-count: 2;
+			}
+			@keyframes animation5{
+			
+				 0%   {background-color:blue;left:0px; top:0px;}
+				25%  {background-color:purple; left:200px; top:0px;}
+				50%  {background-color:#ff0066;left:200px; top:200px;}
+				75%  {background-color:pink;left:0px; top:200px;}
+				100% {background-color:#ff6666; left:0px; top:0px;}
+			}
+			#a6:hover{
+				position:relative;
+				background-color:#ff6666;
+				animation-name:animation6;
+				animation-duration: 10s;
+				 animation-iteration-count: 2;
+			}
+			@keyframes animation6{
+			
+				 0%   {background-color:#ff6666;left:0px; top:0px;}
+				
+				50%  {background-color:#ff0066;left:200px; top:200px;}
+				
+				100% {background-color:#ff6666; left:0px; top:0px;}
+			}
+			#a7:hover{
+				width:100px;
+				height:100px;
+				position:relative;
+				background-color:#ff6666;
+				animation-name:animation7;
+				animation-duration: 10s;
+				 animation-iteration-count: 2;
+			}
+			@keyframes animation7{
+			
+				 0%  {background-color:blue;left:0px; top:0px;}
+				25%  {background-color:purple; left:0px; top:-200px;}
+				50%  {background-color:#ff0066;left:99.99px; top:-133.32px;}
+				75%  {background-color:pink;left:166.65px; top:-200px;}
+				100%  {background-color:#ff6666; left:166.65px; top:0px;}
+				
+			}
+			#a8:hover{
+				position:relative;
+				background-color:#ff6666;
+				animation-name:animation8;
+				animation-duration: 10s;
+				 animation-iteration-count: 2;
+			}
+			@keyframes animation8{
+			
+				 0%  {left:0px; top:0px;}
+				25%  {left:200px; top:0px;}
+				50%  {left:0px; top:0px;}
+				75%  {left:0; top:200px;}
+				100%  {left:0; top:0;}
+			}
+			#a9:hover{
+				position:relative;
+				background-color:#00ff66;
+				animation-name:animation9;
+				animation-duration: 10s;
+				 animation-iteration-count: 4;
+			}
+			@keyframes animation9{
+			
+				 0%  {left:0px; top:0px;}
+				25%  {left:200px; top:0px;}
+				50%  {background-color:blue}
+				75%  {left:0; top:0px;}
+				100% {background-color:black; color:#00ff66;}
+			}
+			#a10:hover{
+				position:relative;
+				background-color:#00ff66;
+				animation-name:animation10;
+				animation-duration: 6s;
+				 animation-iteration-count: 3;
+			}
+			@keyframes animation10{
+			
+				 0%  {width:300px;transition:width 4s;}
+				25%  {text-align:right; background-color:yellow;}
+				50%  {height:300px;transition: height 6s;}
+				75%  {color:white; background-color:black;}
+				100% {width:200px;transition:width 4s;height:200px;transition: height 6s;}
+			}
+			
+		</style>
+	</head>
+	<body>
+		<article id="a1">
+			<h1>Il primo box</h1>
+		</article>
+		
+		<article id="a2">
+			<h1>Il secondo box</h1>
+		</article>
+		
+		<article id="a3">
+			<h1>Il terzo box</h1>
+		</article>
+		<article id="a4">
+			<h1>Il quarto box</h1>
+		</article>
+		
+		<article id="a5">
+			<h1>Il quinto  box</h1>
+		</article>
+		
+		<article id="a6">
+			<h1>Il sesto box</h1>
+		</article>
+		<article id="a7">
+			<h1>Il settimo box</h1>
+		</article>
+		
+		<article id="a8">
+			<h1>Il ottavo box</h1>
+		</article>
+		
+		<article id="a9">
+			<h1>Il nono  box</h1>
+		</article>
+		<article id="a10">
+			<h1>Il decimo box</h1>
+		</article>
+	</body>
+	
+</html>
